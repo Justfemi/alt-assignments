@@ -31,7 +31,7 @@ body {
       font-size: 40px;
       font-style: normal;
       font-weight: 700;
-      line-height: 50px; /* 125% */
+      line-height: 50px;
       letter-spacing: -0.8px;
       text-transform: capitalize;
       margin: 50px 0 20px;
@@ -43,7 +43,7 @@ body {
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
-      line-height: 25px; /* 156.25% */
+      line-height: 25px;
       width: 460px;
     }
   }
@@ -120,7 +120,7 @@ body {
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
-        line-height: 25px; /* 178.571% */
+        line-height: 25px;
 
         a {
           color: #2EC4B6;
@@ -137,7 +137,7 @@ body {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 25px; /* 178.571% */
+    line-height: 25px;
 
     a {
       color: #2EC4B6;
