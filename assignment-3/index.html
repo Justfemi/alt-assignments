@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <title>Assignment-2 : WP Pusher Checkout</title>
 </head>
 <body>
@@ -44,19 +47,19 @@
         </div>
 
         <div class="input-container">
-          <div>
+          <div class="input-box-1">
             <label for="#">first name</label>
             <input type="text" >
           </div>
 
-          <div>
+          <div class="input-box-1">
             <label for="#">last name</label>
             <input type="text" >
           </div>
         </div>
 
         <div class="input-container">
-          <div>
+          <div class="input-box-2">
             <label for="#">email</label>
             <input type="email" class="long-width">
           </div>
@@ -69,16 +72,71 @@
           <h4>Your Payment Information</h4>
         </div>
 
-        <div class="input-container">
-          <div class="full">
-            <label for="#">Credit Card</label>
-            <input type="email" class="full-width">
+        <section>
+          <div class="input-container">
+            <div class="joint-divs">
+              <label for="#">Credit Card</label>
+              <div class="joint-inputs">
+                <input type="text" placeholder="Card Number" class="first">
+                <input type="text" placeholder="MM/YY" class="second">
+                <input type="text" placeholder="CVC" class="third">
+              </div>
+            </div>
           </div>
+        </section>
+      </section>
+
+      <section class="bottom">
+        <button>Buy WP Pusher</button>
+
+        <div class="need-help">
+          <img src="./images/question.svg" alt="question">
+          <p><strong>Need any help? </strong> Don’t hesitate to contact <br> support!</p>
+        </div>
+  
+        <div class="stripe">
+          <img src="./images/stripe.svg" alt="stripe">
         </div>
       </section>
     </section>
     <section class="details-container">
-
+      <h3>Freelancer</h3>
+      <div class="amount">
+        <p class="first-p">$</p>
+        <h1>99</h1>
+        <p class="second-p">/year</p>
+      </div>
+      <p>Automatically renews after 1 <br> year</p>
+      <section class="list">
+        <div>
+          <img src="./images/check.svg" alt="check">
+          <p>Use on 5 client sites</p>
+        </div>
+        <div>
+          <img src="./images/check.svg" alt="check">
+          <p>Private repositories</p>
+        </div>
+        <div>
+          <img src="./images/check.svg" alt="check">
+          <p>Email support</p>
+        </div>
+      </section>
+      <div class="agency-plan">
+        <p>Need <strong>20</strong> client sites? </p>
+        <h4>Switch to the <i>Agency</i> plan.</h4>
+      </div>
+      <div class="line"></div>
+      <div class="review">
+        <p>
+          FTP is horrible to deal with. <strong>WP Pusher</strong> solves that issue, and the customer support is awesome!
+        </p>
+      </div>
+      <div class="profile">
+        <div class="img-box">
+          <img src="./images/profile.png" alt="Kirk Beard">
+        </div>
+        <h3>Kirk Beard</h3>
+      </div>
     </section>
   </section>
 </body>
