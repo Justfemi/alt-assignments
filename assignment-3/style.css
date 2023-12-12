@@ -56,7 +56,6 @@ header {
   }
 }
 
-
 #wrapper {
   width: 50%;
   margin: 85px auto 0;
@@ -482,7 +481,7 @@ header {
 }
 
 footer {
-  margin-block: 33px;
+  margin-block: 33px 100px;
   text-align: center;
 
   > p {
