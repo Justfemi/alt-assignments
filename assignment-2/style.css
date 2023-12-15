@@ -5,10 +5,17 @@
   transition: all .3s ease-in-out;
 }
 
-body {
-  height: 100%;
-  background-color: rgba(46, 196, 182, 0.04);
+html, body {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  min-height: 100%;
+  /* margin: 0; */
+}
+
+body {
+  background-color: rgba(46, 196, 182, 0.04);
 }
 
 .container {
@@ -16,10 +23,12 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 85%;
-  margin: 50px auto;
+  margin: 50px 0;
+  /* border: solid red; */
+
 
   > .information {
-    width: 50%;
+    width: 45%;
 
     > img {
       width: 78px;
@@ -45,7 +54,7 @@ body {
         font-style: normal;
         font-weight: 400;
         line-height: 25px;
-        width: 460px;
+        width: 85%;
       }
 
       > .mobile-p {
