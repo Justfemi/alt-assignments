@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all .3s ease-in-out;
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   background-color: rgba(46, 196, 182, 0.04);
   display: flex;
-  justify-content: center;
 }
 
 .container {
@@ -16,7 +16,7 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 85%;
-  margin: 0 auto;
+  margin: 50px auto;
 
   > .information {
     width: 50%;
@@ -89,6 +89,7 @@ body {
           > input, select {
             padding: 12px;
             border: 1.5px solid #F0F0F0;
+            border-radius: 3px;
 
             &:focus {
               outline: none;
@@ -116,6 +117,11 @@ body {
           letter-spacing: 0.2px;
           width: 100%;
           margin-block-end: 16px;
+          border-radius: 3px;
+
+          &:hover {
+            background-color: #0db0a0;
+          }
         }
       }
 
