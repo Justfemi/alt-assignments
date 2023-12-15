@@ -86,15 +86,12 @@ body {
             margin-block-end: 10px;
           }
 
-          > select {
-            background: transparent;
-          }
-
           > input, select {
             padding: 12px;
             border: 1.5px solid #F0F0F0;
             border-radius: 3px;
             width: 100%;
+            background-color: transparent;
 
             &:focus {
               outline: none;
