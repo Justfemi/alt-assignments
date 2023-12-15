@@ -19,6 +19,10 @@ a {
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.01px;
+
+  &:hover {
+    color: #548BC5;
+  }
 }
 
 body {
@@ -43,7 +47,6 @@ header {
         border: 2px solid #646E7A;
         padding: 12px 20px;
         background-color: transparent;
-    
         color: #1D2C3C;
         font-family: 'Lato', sans-serif;
         font-size: 14px;
@@ -51,13 +54,18 @@ header {
         font-weight: 700;
         line-height: normal;
         letter-spacing: -0.01px;
+
+        &:hover {
+          background-color: #1D2C3C;
+          color: #fff;
+        }
       }
     }
   }
 }
 
 #wrapper {
-  width: 50%;
+  width: 892px;
   margin: 85px auto 0;
   display: flex;
   background-color: #FFF;
@@ -65,7 +73,7 @@ header {
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05), 0px 15px 35px 0px rgba(43, 64, 78, 0.10);
 
   > .checkout-container {
-    width: 65%;
+    width: 67%;
     background: #FFF;
     border-radius: 6px 0 0 6px;
     height: 100%;
@@ -215,6 +223,7 @@ header {
               border-radius: 4px;
               background: #EDEFF2;
               width: 100%;
+              border: 1px solid transparent;
 
               > input {
                 border: none;
@@ -232,6 +241,10 @@ header {
 
               > .third {
                 width: 10%;
+              }
+
+              &:focus {
+                border-color: #548BC5;
               }
             }
           }
@@ -308,7 +321,7 @@ header {
   }
 
   > .details-container {
-    width: 35%;
+    width: 33%;
     background: #1179BF;
     border-radius: 0px 6px 6px 0px;
     padding: 42px 46px;
@@ -456,8 +469,8 @@ header {
       margin-block-start: 17px;
 
       > .img-box {
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
 
         > img {
           width: 100%;
