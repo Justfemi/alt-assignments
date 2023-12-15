@@ -25,29 +25,29 @@ body {
       width: 78px;
     }
 
-    h2 {
-      color: #000B0A;
-      font-family: 'Fraunces', sans-serif;
-      font-size: 40px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 50px;
-      letter-spacing: -0.8px;
-      text-transform: capitalize;
-      margin: 50px 0 20px;
-    }
-
-    p {
-      color: #737373;
-      font-family: 'Fraunces', sans-serif;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 25px;
-      width: 460px;
-    }
-
     > .details {
+      > h2 {
+        color: #000B0A;
+        font-family: 'Fraunces', sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: -0.8px;
+        text-transform: capitalize;
+        margin: 50px 0 20px;
+      }
+  
+      > p {
+        color: #737373;
+        font-family: 'Fraunces', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+        width: 460px;
+      }
+      
       > .mobile-p {
         display: none;
       }
@@ -84,6 +84,10 @@ body {
             letter-spacing: 0.1px;
             text-transform: capitalize;
             margin-block-end: 10px;
+          }
+
+          > select {
+            background: transparent;
           }
 
           > input, select {
@@ -196,19 +200,19 @@ body {
       width: 100%;
 
       > img {
-        width: 39px;
-      }
-
-      p {
-        width: 100%;
-      }
-
-      h2 {
-        margin: 40px 0 12px;
-        font-size: 30px;
+        width: 40px;
       }
 
       > .details {
+        > p {
+          width: 100%;
+        }
+  
+        > h2 {
+          margin: 40px 0 12px;
+          font-size: 30px;
+        }
+
         > .desktop-p {
           display: none;
         }
