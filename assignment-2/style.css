@@ -11,7 +11,6 @@ html, body {
   justify-content: center;
   /* height: 100vh; */
   min-height: 100%;
-  /* margin: 0; */
 }
 
 body {
@@ -24,7 +23,6 @@ body {
   justify-content: space-between;
   width: 85%;
   margin: 50px 0;
-  /* border: solid red; */
 
 
   > .information {
@@ -118,7 +116,7 @@ body {
           padding: 12px;
           background-color: #2EC4B6;
           color: #ffffff;
-          border: none;
+          border: 2px solid transparent;
           cursor: pointer;
           font-family: 'Sofia Sans', sans-serif;
           font-size: 16px;
@@ -131,7 +129,9 @@ body {
           border-radius: 3px;
 
           &:hover {
-            background-color: #0db0a0;
+            background-color: transparent;
+            border: 2px solid #2EC4B6;
+            color: #2EC4B6;
           }
         }
       }
@@ -145,7 +145,7 @@ body {
         font-weight: 400;
         line-height: 25px;
 
-        a {
+        > a {
           color: #2EC4B6;
         }
       }
@@ -162,7 +162,7 @@ body {
     font-weight: 400;
     line-height: 25px;
 
-    a {
+    > a {
       color: #2EC4B6;
     }
   }
@@ -171,13 +171,6 @@ body {
 @media screen and (max-width: 1160px) {
   .container {
     width: 95%;
-
-    /* > .information {
-
-      p {
-        width: 85%;
-      }
-    } */
   }
 }
 
@@ -187,7 +180,7 @@ body {
 
     > .information {
 
-      p {
+      > p {
         width: 85%;
       }
     }
@@ -199,9 +192,11 @@ body {
     height: 100%;
     padding-block-start: 70px;
   }
+
   .container {
     flex-direction: column;
     width: 90%;
+    margin: 0;
 
     > .information{
       width: 100%;
