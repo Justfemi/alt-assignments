@@ -7,3 +7,5 @@
 + The second page should be the alt-school application form.
 
 + Link both pages, ensuring both pages have global navigation.
+
++ My Solution - https://alt-assignments-lhxp.vercel.app/
