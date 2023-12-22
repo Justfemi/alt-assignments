@@ -564,6 +564,11 @@ footer {
 }
 
 @media only screen and (max-width: 820px){
+  header {
+    > nav {
+      display: none;
+    }
+  }
   #wrapper {
     width: 95%;
 
@@ -607,6 +612,7 @@ footer {
     > .details-container {
       width: 100%;
       text-align: center;
+      border-radius: 0px 0px 6px 6px;
 
       > .amount {
         margin-block: 15px;
