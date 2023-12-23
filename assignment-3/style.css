@@ -327,7 +327,7 @@ header {
               left: 0;
               bottom: 1px;
               border-bottom: 1px solid #646E7A;
-              width: 80px;
+              width: 60px;
             }
           }
         }
@@ -414,6 +414,7 @@ header {
         display: flex;
         align-items: center;
         margin-block-start: 16px;
+        gap: 11px;
         
         > p {
           color: #FFF;
@@ -423,7 +424,6 @@ header {
           font-weight: 400;
           line-height: 24px; /* 150% */
           letter-spacing: -0.008px;
-          margin-inline-start: 11px;
         }
       }
     }
@@ -565,10 +565,19 @@ footer {
 
 @media only screen and (max-width: 820px){
   header {
+    margin: 0 20px;
+
     > nav {
       display: none;
     }
+
+    > .icons {
+      display: inline-flex;
+      /* border: solid red; */
+      padding: 30px 0;
+    }
   }
+
   #wrapper {
     width: 95%;
 
@@ -602,11 +611,13 @@ footer {
 
 @media only screen and (max-width: 690px) {
   #wrapper {
-    width: 80%;
+    width: 95%;
     flex-direction: column;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05), 0px 15px 35px 0px rgba(43, 64, 78, 0.10);
 
     > .checkout-container {
       width: 100%;
+      border-radius: 6px 6px 0 0;
     }
 
     > .details-container {
@@ -621,12 +632,63 @@ footer {
 
       > .list {
         margin-block: 40px;
-        margin-inline: auto;
-        width: 38%;
+
+        > div {
+          width: fit-content;
+          /* border: solid red; */
+          margin: 16px auto 0;
+        }
+      }
+
+      > .profile {
         /* border: solid red; */
-        /* justify-content: center; */
+        width: fit-content;
+        margin-inline: auto;
       }
     }
   }
 }
 
+@media only screen and (max-width: 425px){
+  header {
+    margin: 0 5px;
+
+    > a {
+
+      > img {
+        width: 150px;
+      }
+    }
+  }
+
+  #wrapper {
+
+    > .checkout-container {
+
+      > h2 {
+        text-align: center;
+      }
+  
+      > .card-inputs-details {
+        padding: 36px 5px 10px;
+      }
+
+      > .bottom {
+        padding: 39px 5px;
+
+        > .need-help {
+    
+          > p {
+
+            > span {
+
+              &::after {
+                width: 45px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
