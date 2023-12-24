@@ -6,9 +6,9 @@ const navButton = document.querySelector('.nav-btn');
 hamburger.addEventListener('click', () => {
   nav.classList.toggle('show');
   if (nav.classList.contains('show')) {
-    hamburger.innerHTML = '<i class="bx bx-x"></i>'; // Close icon
+    hamburger.innerHTML = '<i class="bx bx-x"></i>';
   } else {
-    hamburger.innerHTML = '<i class="bx bx-menu"></i>'; // Hamburger icon
+    hamburger.innerHTML = '<i class="bx bx-menu"></i>';
   }
 });
 

@@ -372,7 +372,7 @@ header {
     > .amount {
       display: flex;
       align-items: center;
-      margin-block: 5px 3px;
+      margin-block: 25px;
 
       > .first-p {
         color: #FFF;
@@ -408,7 +408,7 @@ header {
     }
 
     > .list {
-      margin-block-start: 36px;
+      margin-block: 40px;
 
       > div {
         display: flex;
@@ -429,7 +429,7 @@ header {
     }
 
     > .agency-plan {
-      margin-block: 38px 42px;
+      margin-block: 45px;
 
       > p {
         color: #FFF;
@@ -470,7 +470,7 @@ header {
     }
 
     > .review {
-      margin-block-start: 41px;
+      margin-block-start: 45px;
 
       > p {
         color: #FFF;
@@ -490,7 +490,7 @@ header {
     > .profile {
       display: flex;
       align-items: center;
-      margin-block-start: 17px;
+      margin-block-start: 20px;
 
       > .img-box {
         width: 40px;
