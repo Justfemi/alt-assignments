@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all .3s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 body {
@@ -39,6 +39,27 @@ header {
         text-decoration: underline;
       }
     }
+
+    > .nav-btn {
+      border-radius: 6px;
+      border: 2px solid #646E7A;
+      padding: 12px 20px;
+      background-color: transparent;
+      color: #1D2C3C;
+      font-family: 'Lato', sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -0.01px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #1D2C3C;
+        color: #fff;
+        border-color: transparent;
+      }
+    }
   }
 
   > .icons {
@@ -49,31 +70,10 @@ header {
   }
 }
 
-.nav-btn {
-  border-radius: 6px;
-  border: 2px solid #646E7A;
-  padding: 12px 20px;
-  background-color: transparent;
-  color: #1D2C3C;
-  font-family: 'Lato', sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: -0.01px;
-  cursor: pointer;
-}
-
-.nav-btn:hover {
-  background-color: #1D2C3C;
-  color: #fff;
-  border-color: transparent;
-}
-
 #wrapper {
   z-index: 10;
   /* width: 892px; */
-  width: 80%;
+  width: 75%;
   margin: 85px auto 0;
   display: flex;
   background-color: #FFF;
@@ -568,14 +568,41 @@ footer {
     margin: 0 20px;
 
     > nav {
-      display: none;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: -90%;
+      left: 0;
+      width: 100%;
+      height: 65vh;
+      background-color: #038E7D;
+
+      > a {
+        padding: 10px;
+        margin-inline-end: 0;
+        margin-block: 10px;
+        color: #fff;
+
+        &:hover {
+          color: #1D2C3C;
+        }
+      }
+
+      > .nav-btn {
+        color: #fff;
+        border: 1px solid #fff;
+        margin-block: 20px;
+      }
     }
 
     > .icons {
-      display: inline-flex;
-      /* border: solid red; */
-      padding: 30px 0;
+      display: block;
+      padding: 15px 0;
     }
+  }
+
+  nav.show {
+    top: 70px;
   }
 
   #wrapper {
@@ -635,13 +662,11 @@ footer {
 
         > div {
           width: fit-content;
-          /* border: solid red; */
           margin: 16px auto 0;
         }
       }
 
       > .profile {
-        /* border: solid red; */
         width: fit-content;
         margin-inline: auto;
       }
