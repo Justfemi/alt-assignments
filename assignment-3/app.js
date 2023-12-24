@@ -9,3 +9,9 @@ hamburger.addEventListener('click', () => {
     hamburger.innerHTML = '<i class="bx bx-menu"></i>'; // Hamburger icon
   }
 });
+
+document.addEventListener('scroll', function () {
+  nav.classList.remove('show');
+  // hamburger.innerHTML = '&#9776;';
+  hamburger.innerHTML = '<i class="bx bx-menu"></i>';
+});
