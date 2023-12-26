@@ -71,8 +71,6 @@ header {
 }
 
 #wrapper {
-  z-index: 10;
-  /* width: 892px; */
   width: 75%;
   margin: 85px auto 0;
   display: flex;
@@ -558,7 +556,7 @@ footer {
 
     > .details-container {
       width: 35%;
-      padding: 70px 30px 20px;
+      padding: 50px 30px 20px;
     }
   }
 }
